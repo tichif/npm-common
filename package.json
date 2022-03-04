@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "clean": "del-cli ./build/*",
-    "build": "yarn run clean && tsc"
+    "build": "yarn run clean && tsc",
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && yarn run build &&npm publish"
   },
   "keywords": [],
   "author": "",
